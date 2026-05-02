@@ -5,10 +5,11 @@ locale = "en-US"
 [params]
   author = "Shivnarayan Dhuppar"
   description = "Postdoctoral researcher at MGH and the Broad Institute of MIT and Harvard"
-  github = "shuppar"
   email = "sdhuppar@mgh.harvard.edu"
-  googleScholar = ""   # add your Google Scholar ID
-  orcid = ""           # add your ORCID
+  googleScholar = "https://scholar.google.com/citations?hl=en&user=sYuB_dUAAAAJ"   # add your Google Scholar ID
+  linkedin = "https://www.linkedin.com/in/shuppar"
+  github = "shuppar"
+  orcid = "/0000-0001-8772-1721"
 
 [markup]
   [markup.goldmark]

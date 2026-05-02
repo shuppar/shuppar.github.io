@@ -23,7 +23,7 @@
       --font-body:   'Spectral', Georgia, serif;
       --font-mono:   'DM Mono', 'Courier New', monospace;
       --max-w:       820px;
-      --nav-h:       64px;
+      --nav-h:       56px;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
@@ -32,25 +32,34 @@
       font-family: var(--font-body); font-size: 17px; line-height: 1.78;
       min-height: 100vh; display: flex; flex-direction: column;
     }
+
      
     nav {
       position: sticky; top: 0; z-index: 100;
-      background: var(--maroon); height: var(--nav-h);
+      background: var(--maroon);
+      height: var(--nav-h);
       display: flex; align-items: center; justify-content: space-between;
       padding: 0 2.5rem;
       box-shadow: 0 2px 16px rgba(0,0,0,0.22);
     }
     .nav-brand {
-      font-family: var(--font-serif); font-size: 1.15rem; font-weight: 500;
+      font-family: var(--font-serif); font-size: 1.1rem; font-weight: 500;
       color: var(--cream); text-decoration: none; letter-spacing: 0.01em;
+      white-space: nowrap;
+      line-height: 1.2;
     }
     .nav-brand span { color: var(--gold); }
-    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+
+     
+    .nav-links {
+      display: flex; gap: 2rem; list-style: none; align-items: center;
+    }
     .nav-links a {
-      font-family: var(--font-mono); font-size: 0.75rem; font-weight: 300;
+      font-family: var(--font-mono); font-size: 0.72rem; font-weight: 300;
       letter-spacing: 0.14em; text-transform: uppercase;
       color: rgba(250,248,244,0.72); text-decoration: none;
       transition: color 0.2s; position: relative; padding-bottom: 3px;
+      white-space: nowrap;
     }
     .nav-links a::after {
       content: ''; position: absolute; bottom: 0; left: 0;
@@ -59,9 +68,48 @@
     }
     .nav-links a:hover, .nav-links a.active { color: var(--gold); }
     .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
+
+     
+    .hamburger {
+      display: none;
+      flex-direction: column; justify-content: center; align-items: center;
+      gap: 5px; width: 36px; height: 36px;
+      background: none; border: none; cursor: pointer; padding: 4px;
+    }
+    .hamburger span {
+      display: block; width: 22px; height: 2px;
+      background: var(--cream); border-radius: 2px;
+      transition: transform 0.3s, opacity 0.3s;
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+     
+    .nav-dropdown {
+      display: none;
+      position: absolute; top: var(--nav-h); left: 0; right: 0;
+      background: var(--maroon-dark);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+      z-index: 99;
+    }
+    .nav-dropdown.open { display: block; }
+    .nav-dropdown a {
+      display: block; padding: 0.9rem 1.5rem;
+      font-family: var(--font-mono); font-size: 0.75rem;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: rgba(250,248,244,0.8); text-decoration: none;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      transition: background 0.2s, color 0.2s;
+    }
+    .nav-dropdown a:hover, .nav-dropdown a.active {
+      background: rgba(245,195,67,0.1); color: var(--gold);
+    }
+
      
     main { flex: 1; }
     .page { max-width: var(--max-w); margin: 0 auto; padding: 3.5rem 2rem 5rem; }
+
      
     h1, h2, h3 { font-family: var(--font-serif); font-weight: 500; line-height: 1.25; color: var(--maroon-dark); }
     h1 { font-size: 2.4rem; margin-bottom: 0.3rem; }
@@ -83,16 +131,19 @@
       font-family: var(--font-mono); font-size: 0.85rem; font-weight: 700;
       letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-muted);
     }
+
      
     footer {
       border-top: 1px solid var(--rule); padding: 1.8rem 2rem;
       text-align: center; font-family: var(--font-mono);
       font-size: 0.7rem; color: var(--ink-faint); letter-spacing: 0.07em;
     }
-    @media (max-width: 600px) {
-      nav { padding: 0 1.2rem; }
-      .nav-links { gap: 1.4rem; }
-      .nav-links a { font-size: 0.68rem; letter-spacing: 0.1em; }
+
+     
+    @media (max-width: 680px) {
+      nav { padding: 0 1.2rem; position: relative; }
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
       .page { padding: 2rem 1.2rem 4rem; }
       h1 { font-size: 1.85rem; }
     }
@@ -101,7 +152,9 @@
 <body>
 <nav>
   <a class="nav-brand" href="/">Shivnarayan <span>Dhuppar</span></a>
-  <ul class="nav-links">
+
+  
+  <ul class="nav-links" id="nav-links">
     
     <li><a href="/">About</a></li>
     
@@ -112,7 +165,26 @@
     <li><a href="/beyond/">Beyond Research</a></li>
     
   </ul>
+
+  
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+
+
+<div class="nav-dropdown" id="nav-dropdown">
+  
+  <a href="/">About</a>
+  
+  <a href="/projects/">Projects</a>
+  
+  <a href="/activities/">Activities</a>
+  
+  <a href="/beyond/">Beyond Research</a>
+  
+</div>
+
 <main>
 <div class="page">
   <p class="mono" style="margin-bottom:0.5rem;">Research</p>
@@ -428,9 +500,21 @@ Chandradoss, Chawla, Dhuppar et al. Cell Reports, 2020
   }
   .exp-img-wrap img { width: 100%; height: auto; object-fit: contain; display: block; border-radius: 2px; }
 
-  @media (max-width: 640px) {
-    .exp-inner { grid-template-columns: 1fr; }
-    .subcard-thumb { width: 56px; height: 44px; }
+  @media (max-width: 680px) {
+    .exp-inner {
+      grid-template-columns: 1fr;
+      padding: 1.2rem;
+      gap: 1.2rem;
+    }
+     
+    .exp-images { flex-direction: column; }
+    .exp-img-wrap { padding: 0.4rem; }
+    .subcard-thumb { width: 54px; height: 42px; }
+    .subcard-collapsed { padding: 0.9rem 1rem; gap: 0.9rem; }
+    .subcard-preview h3 { font-size: 0.95rem; }
+    .subcard-summary { font-size: 0.82rem; }
+     
+    .subcard-expanded.open { max-height: 2000px; }
   }
 </style>
 
@@ -446,13 +530,31 @@ Chandradoss, Chawla, Dhuppar et al. Cell Reports, 2020
 
 </main>
 <footer>
-  © 2026 Shivnarayan Dhuppar &nbsp;·&nbsp; Mass General Brigham &amp; Harvard Medical School
+  © 2026 Shivnarayan Dhuppar &nbsp;·&nbsp; MGH &amp; Harvard Medical School
 </footer>
+
 <script>
-  document.querySelectorAll('.nav-links a').forEach(l => {
+  
+  const path = window.location.pathname;
+  document.querySelectorAll('.nav-links a, .nav-dropdown a').forEach(l => {
     const href = l.getAttribute('href');
-    const path = window.location.pathname;
     if (href === '/' ? path === '/' : path.startsWith(href)) l.classList.add('active');
+  });
+
+  
+  const btn = document.getElementById('hamburger');
+  const dropdown = document.getElementById('nav-dropdown');
+  btn.addEventListener('click', () => {
+    btn.classList.toggle('open');
+    dropdown.classList.toggle('open');
+  });
+
+  
+  dropdown.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      btn.classList.remove('open');
+      dropdown.classList.remove('open');
+    });
   });
 </script>
 </body>
