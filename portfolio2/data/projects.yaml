@@ -1,0 +1,89 @@
+eras:
+  - name: "Postdoctoral Work"
+    institution: "MGH & Harvard Medical School · 2023–present"
+    projects:
+      - id: "prenatal"
+        title: "Prenatal Stress & Long-Term Health"
+        summary: "Investigating how chronic prenatal stress reshapes immune function and brain development across a lifetime."
+        thumbnail: "Prenatal1.png"
+        images:
+          - "Prenatal1.png"
+          - "Prenatal2.png"
+          - "Prenatal3.png"
+        tags:
+          - "scRNA-seq"
+          - "ATAC-seq"
+          - "Neuroimmunology"
+          - "Mouse models"
+        description: |
+          Chronic prenatal stress disrupts immune function and brain development in ways that persist across a lifetime.
+          Using single-cell sequencing (scRNA-seq, ATAC-seq) and stereotaxic brain interventions in mouse models,
+          I investigate the molecular pathways mediating these effects — with the goal of identifying targets for intervention.
+          Key observations include dysregulation of microglia, impaired IFN-γ and IFN-α response pathways,
+          and placental cytokine dysregulation that drives T cell exhaustion in the developing embryo.
+          This work is part of the Biology of Adversity Project at the Broad Institute.
+        publication: ""
+
+      - id: "mirna-cancers"
+        title: "miRNAs in Cancers"
+        summary: "Characterizing the roles of miR-92a and miR-21 in colorectal cancer, colitis, and Multiple Sclerosis."
+        thumbnail: "CRC2.png"
+        images:
+          - "CRC2.png"
+          - "CRC_mir92.png"
+        tags:
+          - "miR-92a"
+          - "miR-21"
+          - "Colorectal cancer"
+          - "Multiple Sclerosis"
+        description: |
+          miR-92a, from the oncogenic miR-17-92 cluster, is upregulated in colorectal cancer and modulates colitis severity.
+          Using miR-92a knockout mouse models and high-dimensional immune profiling of the lamina propria,
+          I characterized altered myeloid and lymphoid composition in colitic mice.
+          In a parallel project, I showed that Type I interferon limits CNS autoimmunity by regulating
+          the miR-21–FOXO1 axis in pathogenic Th17 cells, providing a mechanistic link between
+          IFN-β therapy and disease amelioration in Multiple Sclerosis.
+        publication: "Varghese et al. Science Translational Medicine, 2025"
+
+  - name: "PhD Work"
+    institution: "TIFR, Mumbai · 2014–2019"
+    projects:
+      - id: "cell-cycle"
+        title: "Cell Cycle Staging from Microscopy"
+        summary: "Automated image analysis pipeline to stage cells in the cell cycle without chemical synchronization."
+        thumbnail: "cellCycle.png"
+        images:
+          - "cellCycle.png"
+        tags:
+          - "Fluorescence microscopy"
+          - "Image analysis"
+          - "DNA damage"
+          - "Cell cycle"
+        description: |
+          I developed a fully automated image analysis pipeline to stage individual cells in the cell cycle
+          from high-resolution fluorescence microscopy — without chemical synchronization, which perturbs the biology.
+          The pipeline combined DNA FISH, RNA FISH, and immunofluorescence.
+          This enabled single-allele-resolution studies of DNA damage responses after UV irradiation,
+          revealing that the γH2AX peak in S phase corresponds to DNA replication rather than the extent of damage —
+          a finding with implications for how DNA repair is interpreted in cycling cells.
+        publication: "Dhuppar & Mazumder. J Cell Science, 2020 · Dhuppar, Roy & Mazumder. Mol Cell Biol, 2020 · Dhuppar & Mazumder. Cell Cycle, 2018"
+
+      - id: "genome-arch"
+        title: "Genome Architecture & Gene Regulation"
+        summary: "How CTCF-mediated three-dimensional genome organization governs monoallelic gene expression."
+        thumbnail: "TMGR.png"
+        images:
+          - "TMGR.png"
+          - "TMGR2.png"
+        tags:
+          - "Genome architecture"
+          - "CTCF"
+          - "Hi-C"
+          - "Monoallelic expression"
+        description: |
+          Differentiating cells develop patterns of gene positioning relative to nuclear compartments —
+          the lamina, heterochromatin, interchromatin — that define cell identity and regulate gene expression.
+          I studied how CTCF-mediated genome architecture governs monoallelic expression of autosomal genes.
+          Extended work at the Children's Hospital of Philadelphia (2020–21) used Hi-C to map
+          cell cycle-dependent changes in three-dimensional chromosome organization.
+        publication: "Chandradoss, Chawla, Dhuppar et al. Cell Reports, 2020"

@@ -1,0 +1,116 @@
+{{ define "main" }}
+<div class="page">
+
+  <!-- Hero -->
+  <div class="hero">
+    <img src="/images/headshot.jpg" alt="Shivnarayan Dhuppar" class="headshot" />
+    <div class="hero-text">
+      <p class="mono" style="margin-bottom:0.6rem;">Senior Research Fellow</p>
+      <h1>Shivnarayan<br>Dhuppar</h1>
+      <p class="affil">
+        <a href="https://www.massgeneral.org" target="_blank">Massachusetts General Hospital</a>
+        &nbsp;&amp;&nbsp;
+        <a href="https://hms.harvard.edu" target="_blank">Harvard Medical School</a>
+      </p>
+      <div class="social-row">
+        <a href="mailto:sdhuppar@mgh.harvard.edu" title="Email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+        </a>
+        <a href="https://github.com/shuppar" target="_blank" title="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        </a>
+        {{ with .Site.Params.googleScholar }}
+        <a href="https://scholar.google.com/citations?user={{ . }}" target="_blank" title="Google Scholar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+        </a>
+        {{ end }}
+        {{ with .Site.Params.orcid }}
+        <a href="https://orcid.org/{{ . }}" target="_blank" title="ORCID">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-2.016-1.284-3.722-4.097-3.722h-2.222z"/></svg>
+        </a>
+        {{ end }}
+        <a href="/cv/Dhuppar_CV.pdf" target="_blank" class="cv-link" title="Download CV">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10,9 9,9 8,9"/></svg>
+          CV
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Bio -->
+  <div class="bio-section">
+    {{ .Content }}
+  </div>
+
+</div>
+
+<style>
+  /* HERO */
+  .hero {
+    display: flex;
+    gap: 2.5rem;
+    align-items: flex-start;
+    margin-bottom: 2.5rem;
+  }
+  .headshot {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    flex-shrink: 0;
+    border: 3px solid var(--rule);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    margin-top: 0.5rem;
+  }
+  .hero-text { flex: 1; }
+  .affil {
+    font-size: 0.95rem;
+    color: var(--ink-muted);
+    margin: 0.5rem 0 1rem;
+    line-height: 1.5;
+  }
+  /* SOCIAL */
+  .social-row {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+    flex-wrap: wrap;
+  }
+  .social-row a {
+    color: var(--ink-faint);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: color 0.2s;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .social-row a:hover { color: var(--maroon); }
+  .cv-link {
+    border: 1px solid var(--maroon) !important;
+    color: var(--maroon) !important;
+    padding: 0.3rem 0.8rem !important;
+    border-radius: 2px;
+    font-size: 0.72rem !important;
+    letter-spacing: 0.12em;
+    transition: background 0.2s, color 0.2s !important;
+  }
+  .cv-link:hover {
+    background: var(--maroon) !important;
+    color: var(--cream) !important;
+  }
+  /* BIO */
+  .bio-section h2:first-child { margin-top: 0; }
+  @media (max-width: 600px) {
+    .hero { flex-direction: column; align-items: center; text-align: center; gap: 1.5rem; }
+    .social-row { justify-content: center; }
+    .headshot { width: 110px; height: 110px; }
+  }
+</style>
+{{ end }}
