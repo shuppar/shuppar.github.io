@@ -5,9 +5,9 @@ eras:
       - id: "prenatal"
         title: "Biological underpinnings of the Matthew effect"
         summary: "Tracing how early-life adversity compounds into lifelong immune and neurodevelopmental vulnerability."
-        thumbnail: "Prenatal_3.png"
+        thumbnail: "matthew.png"
         images:
-          - "matthew.png"
+          - "matthew.png" # "Prenatal_3.png" (Developmental stages in mouse versus human (Hemberger et al., Nature, 2020).)
           - "Prenatal_1.png"
           - "Prenatal_2.png"
         tags:
