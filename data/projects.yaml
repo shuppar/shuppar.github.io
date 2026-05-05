@@ -3,8 +3,8 @@ eras:
     institution: "MGB & Harvard Medical School · 2023–present"
     projects:
       - id: "prenatal"
-        title: "Prenatal Stress & Long-Term Health"
-        summary: "Investigating how chronic prenatal stress reshapes immune function and brain development across a lifetime."
+        title: "Biological underpinnings of the Matthew effect"
+        summary: "Tracing how early-life adversity compounds into lifelong immune and neurodevelopmental vulnerability."
         thumbnail: "Prenatal_3.png"
         images:
           - "Prenatal_3.png"
@@ -16,14 +16,15 @@ eras:
           - "Neuroimmunology"
           - "Mouse models"
         description: >
-          Exposure to stress during pregnancy can increase disease susceptibility in offspring, with effects that persist across generations. 
-          Using single-cell transcriptomics, multiplexed proteomics, and stereotaxic brain interventions in mice, I investigate how maternal
-           stress reshapes immune function and brain development, and how these changes propagate to the next generation. 
-           The goal is to identify points of intervention that can reduce, if not reverse, the long-term health consequences of prenatal stress. 
-           This work is part of the Biology of Adversity Project at the Broad Institute.
-
+          The Matthew effect, in its bleakest form, describes how early disadvantage compounds over a lifetime. 
+          Children born to stressed mothers face elevated disease risk, and that risk does not reset at birth. 
+          Understanding the biological mechanisms that lock in these early-life penalties is both a scientific and a public health imperative.
+          Using single-cell transcriptomics, multiplexed proteomics, and stereotaxic brain interventions in mice, I investigate how maternal stress 
+          reshapes immune function and brain development in offspring, and how these changes propagate across generations. 
+          The goal is to identify points of intervention that can reduce, or reverse, the long-term health consequences of prenatal stress. 
+          This work is part of the Biology of Adversity Project at the Broad Institute.
            <strong> Figures </strong>:
-           Top: developmental staging in mouse versus human. Middle: stereotaxic ablation of stress centers in the mouse brain, confirmed by reduced cortisol levels. Bottom: single-cell transcriptomic clustering of mouse brain cells.
+           Top: Matthew effect: The rich get richer; poor, poorer. Middle: Stereotaxic ablation of stress centers in the mouse brain, confirmed by reduced cortisol levels. Bottom: Single-cell transcriptomic clustering of mouse brain cells.
         publication: |
           Seligowski, Dhuppar, et al., (in preparation)
 
