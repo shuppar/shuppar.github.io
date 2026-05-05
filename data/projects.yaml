@@ -16,13 +16,17 @@ eras:
           - "Neuroimmunology"
           - "Mouse models"
         description: >
-          The Matthew effect, in its bleakest form, describes how early disadvantages cam compound over a lifetime. 
-          Children born to stressed mothers face elevated disease risk, and that risk does not reset at birth. 
-          Understanding the biological mechanisms that compound these early-life adversities is both a scientific and a public health imperative.
-          Using single-cell transcriptomics, multiplexed proteomics, and neurologic interventions in mice, I investigate how maternal stress 
-          reshapes immune function and brain development in offspring, and how these changes propagate across generations. 
-          The goal is to identify points of intervention that can reduce, if not reverse, the long-term health consequences of prenatal stress. 
-          This work is part of the Biology of Adversity Project at the Broad Institute.
+          The Matthew effect describes how early disadvantages compound over a lifetime. Children born to stressed mothers face 
+          elevated disease risk that does not reset at birth and can be transmitted transgenerationally, as documented in children of 
+          the <a href="https://www.hongerwinter.nl/?lang=en" target="_blank">Dutch Hunger Winter</a>. Understanding the biological mechanisms that embed these early-life adversities into lasting 
+          disease risk is both a scientific and a public health imperative.
+
+
+          Using single-cell transcriptomics, multiplexed proteomics, and neurologic interventions in mice, 
+          I investigate how maternal stress reshapes immune function and brain development in offspring, and how these changes 
+          propagate across generations. The goal is to identify points of intervention that can reduce, if not reverse, the long-term 
+          health consequences of prenatal stress. This work is part of the Biology of Adversity Project at the Broad Institute.
+
            <strong> Figures </strong>:
            Top: Matthew effect: The rich get richer; poor, poorer. Middle: Stereotaxic ablation of stress centers in the mouse brain, confirmed by reduced cortisol levels. Bottom: Single-cell transcriptomic clustering of mouse brain cells.
         publication: |
