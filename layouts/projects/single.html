@@ -156,7 +156,7 @@
   .subcard-expanded.open { max-height: 3000px; }
 
   .exp-inner {
-    display: grid; grid-template-columns: 1fr 1fr;
+    display: grid; grid-template-columns: 55% 45%;
     gap: 2rem; padding: 1.6rem 1.8rem 1.8rem;
     border-top: 1px solid var(--rule);
   }
@@ -179,6 +179,7 @@
   .exp-images {
     display: flex; flex-direction: column;
     gap: 0.75rem; align-items: center; justify-content: flex-start;
+    padding-right: 1rem;
   }
   .exp-img-wrap {
     width: 100%; background: #fff; border-radius: 4px;
@@ -226,6 +227,7 @@
       padding: 1.2rem;
     }
   }
+  @media (max-width: 500px) {
     .exp-inner {
       grid-template-columns: 1fr;
       padding: 1.2rem;

@@ -270,7 +270,7 @@ Using single-cell transcriptomics, multiplexed proteomics, and neurologic interv
         <div class="subcard-expanded" id="exp-mirna-cancers">
           <div class="exp-inner">
             <div class="exp-text">
-              <p class="exp-description">MicroRNAs are small non-coding RNAs that regulate gene expression post-transcriptionally. Their discovery earned Gary Ruvkun and Victor Ambros  the 2024 Nobel Prize in Physiology or Medicine. Ruvkun, at this institution, has spent decades unraveling how these molecules control development  and disease.
+              <p class="exp-description"><a href="https://en.wikipedia.org/wiki/MicroRNA" target="_blank">MicroRNAs</a> are small non-coding RNAs that regulate gene expression post-transcriptionally. Their discovery earned Gary Ruvkun and Victor Ambros  the 2024 Nobel Prize in Physiology or Medicine. Ruvkun, at this institution, has spent decades unraveling how these molecules control development  and disease.
 
 miR-92a, from the oncogenic miR-17-92 cluster, promotes colorectal tumor growth by suppressing pro-apoptotic and anti-proliferative targets,  and modulates inflammatory signaling in the gut. Using knockout mouse models and high-dimensional immune profiling of the lamina propria, I investigated  how its loss reshapes immune composition during colitis. In a separate collaborative project, we show that Type I interferon limits CNS autoimmunity  through the miR-21–FOXO1 axis in pathogenic Th17 cells, providing a mechanistic basis for IFN-β therapy in Multiple Sclerosis.
 
@@ -629,7 +629,7 @@ Chandradoss, Chawla, Dhuppar et al. Cell Reports, 2020
   .subcard-expanded.open { max-height: 3000px; }
 
   .exp-inner {
-    display: grid; grid-template-columns: 1fr 1fr;
+    display: grid; grid-template-columns: 55% 45%;
     gap: 2rem; padding: 1.6rem 1.8rem 1.8rem;
     border-top: 1px solid var(--rule);
   }
@@ -652,6 +652,7 @@ Chandradoss, Chawla, Dhuppar et al. Cell Reports, 2020
   .exp-images {
     display: flex; flex-direction: column;
     gap: 0.75rem; align-items: center; justify-content: flex-start;
+    padding-right: 1rem;
   }
   .exp-img-wrap {
     width: 100%; background: #fff; border-radius: 4px;
@@ -699,6 +700,7 @@ Chandradoss, Chawla, Dhuppar et al. Cell Reports, 2020
       padding: 1.2rem;
     }
   }
+  @media (max-width: 500px) {
     .exp-inner {
       grid-template-columns: 1fr;
       padding: 1.2rem;
