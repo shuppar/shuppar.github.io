@@ -58,6 +58,52 @@
   </div>
   {{ end }}
 
+  <!-- Publications card -->
+  {{ with .Site.Data.projects.publications }}
+  <div class="era-block">
+    <div class="era-header">
+      <span class="mono">{{ .name }}</span>
+      <span class="era-inst">{{ .institution }}</span>
+    </div>
+    <div class="era-card">
+
+      <!-- Collapsed header row -->
+      <div class="subcard-collapsed" onclick="toggleProject('publications')" style="padding: 1.1rem 1.4rem;">
+        <div class="subcard-preview">
+          <h3 style="margin:0; font-size:1.05rem;">Full Publication List</h3>
+          <p class="subcard-summary">{{ len .years }} years · click to expand</p>
+        </div>
+        <span class="subcard-chevron" id="chev-publications">↓</span>
+      </div>
+
+      <!-- Expanded panel -->
+      <div class="subcard-expanded" id="exp-publications">
+        <div style="border-top: 1px solid var(--rule);">
+          {{ range .years }}
+          <div class="pub-year-group">
+            <div class="pub-year-label">{{ .year }}</div>
+            <div class="pub-entries">
+              {{ range .entries }}
+              <div class="pub-entry">
+                <p class="pub-authors">{{ .authors }}</p>
+                <p class="pub-title">
+                  {{ if .link }}<a href="{{ .link }}" target="_blank">{{ end }}
+                  {{ .title }}
+                  {{ if .link }}</a>{{ end }}
+                </p>
+                <p class="pub-journal"><em>{{ .journal }}</em></p>
+              </div>
+              {{ end }}
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+
+    </div>
+  </div>
+  {{ end }}
+
 </div>
 
 <style>
@@ -107,10 +153,10 @@
     transition: max-height 0.45s ease;
     background: #fff;
   }
-  .subcard-expanded.open { max-height: 1000px; }
+  .subcard-expanded.open { max-height: 3000px; }
 
   .exp-inner {
-    display: grid; grid-template-columns: 1fr 1fr;
+    display: grid; grid-template-columns: 55% 45%;
     gap: 2rem; padding: 1.6rem 1.8rem 1.8rem;
     border-top: 1px solid var(--rule);
   }
@@ -133,6 +179,7 @@
   .exp-images {
     display: flex; flex-direction: column;
     gap: 0.75rem; align-items: center; justify-content: flex-start;
+    padding-right: 1rem;
   }
   .exp-img-wrap {
     width: 100%; background: #fff; border-radius: 4px;
@@ -141,7 +188,46 @@
   }
   .exp-img-wrap img { width: 100%; height: auto; object-fit: contain; display: block; border-radius: 2px; }
 
+  /* PUBLICATIONS CARD */
+  .pub-card { padding: 0; }
+  .pub-year-group {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 0 1.5rem;
+    padding: 1.4rem 1.8rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .pub-year-group:last-child { border-bottom: none; }
+  .pub-year-label {
+    font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700;
+    color: var(--gold-muted); letter-spacing: 0.08em;
+    padding-top: 0.15rem;
+  }
+  .pub-entries { display: flex; flex-direction: column; gap: 1.4rem; }
+  .pub-entry {}
+  .pub-authors {
+    font-family: var(--font-mono); font-size: 0.72rem;
+    color: var(--ink-faint); letter-spacing: 0.04em;
+    margin-bottom: 0.2rem;
+  }
+  .pub-title {
+    font-size: 0.97rem; color: var(--ink);
+    line-height: 1.5; margin-bottom: 0.2rem; font-weight: 500;
+    font-family: var(--font-serif);
+  }
+  .pub-title a { color: var(--maroon); }
+  .pub-title a:hover { color: var(--gold-muted); }
+  .pub-journal {
+    font-size: 0.85rem; color: var(--ink-faint); margin-bottom: 0;
+  }
   @media (max-width: 680px) {
+    .pub-year-group {
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+      padding: 1.2rem;
+    }
+  }
+  @media (max-width: 500px) {
     .exp-inner {
       grid-template-columns: 1fr;
       padding: 1.2rem;
@@ -155,7 +241,7 @@
     .subcard-preview h3 { font-size: 0.95rem; }
     .subcard-summary { font-size: 0.82rem; }
     /* Allow expanded panel to grow taller on mobile */
-    .subcard-expanded.open { max-height: 2000px; }
+    .subcard-expanded.open { max-height: 3000px; }
   }
 </style>
 

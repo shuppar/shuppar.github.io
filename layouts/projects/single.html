@@ -61,17 +61,18 @@
   <!-- Publications card -->
   {{ with .Site.Data.projects.publications }}
   <div class="era-block">
-    <div class="era-header">
-      <span class="mono">{{ .name }}</span>
-      <span class="era-inst">{{ .institution }}</span>
-    </div>
+    <hr>
+    <h1 style="margin-bottom:0.3rem;">Publications</h1>
+    <p style="color:var(--ink-muted); font-style:italic; font-size:0.97rem; margin-bottom:1rem;">* marks corresponding authorship</p>
+    <p class="mono" style="margin-bottom:1rem;">Full Publications List</p>
     <div class="era-card">
 
       <!-- Collapsed header row -->
       <div class="subcard-collapsed" onclick="toggleProject('publications')" style="padding: 1.1rem 1.4rem;">
         <div class="subcard-preview">
-          <h3 style="margin:0; font-size:1.05rem;">Full Publication List</h3>
-          <p class="subcard-summary">{{ len .years }} years · click to expand</p>
+          <h3 style="margin:0; font-size:1.05rem;">2018 – present</h3>
+          <!-- <p class="subcard-summary">{{ len .years }} years · click to expand</p> -->
+          <p class="subcard-summary">click to expand</p>
         </div>
         <span class="subcard-chevron" id="chev-publications">↓</span>
       </div>

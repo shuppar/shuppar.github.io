@@ -136,7 +136,7 @@ publications:
   years:
     - year: "2025"
       entries:
-        - authors: "Dhuppar S*, Poller W, Gopal M"
+        - authors: "Dhuppar S*, Poller W*, Gopal M*"
           title: "miRNAs in the Biology and Hallmarks of Neurodegeneration"
           journal: "Trends in Molecular Medicine"
           year: "2025"
