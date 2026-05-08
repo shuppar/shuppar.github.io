@@ -16,8 +16,8 @@ eras:
           - "Neuroimmunology"
           - "Mouse models"
         description: >
-          The Matthew effect describes how early disadvantages compound over a lifetime. Children born to stressed mothers face 
-          elevated disease risk that does not reset at birth and can be transmitted transgenerationally, as documented in children of 
+          The  <a href="https://en.wikipedia.org/wiki/Matthew_effect" target="_blank">Matthew Effect</a> describes how early disadvantages (or privileges) compound over a lifetime. Children born to stressed mothers face 
+          elevated disease risk that does not reset at birth and can be transmitted transgenerationally, as documented in the children conceived or born during 
           the <a href="https://www.hongerwinter.nl/?lang=en" target="_blank">Dutch Hunger Winter</a>. Understanding the biological mechanisms that embed these early-life adversities into lasting 
           disease risk is both a scientific and a public health imperative.
 
@@ -46,7 +46,7 @@ eras:
           - "Colorectal cancer"
           - "Multiple Sclerosis"
         description: >
-          MicroRNAs are small non-coding RNAs that regulate gene expression post-transcriptionally. Their discovery earned Gary Ruvkun and Victor Ambros 
+          <a href="https://en.wikipedia.org/wiki/MicroRNA" target="_blank">MicroRNAs</a> are small non-coding RNAs that regulate gene expression post-transcriptionally. Their discovery earned Gary Ruvkun and Victor Ambros 
           the 2024 Nobel Prize in Physiology or Medicine. Ruvkun, at this institution, has spent decades unraveling how these molecules control development 
           and disease.
 
@@ -130,4 +130,72 @@ eras:
           Sen, Dhuppar, & Mazuzmder, FISH Methods and Protocols, 2024
           Dhuppar & Mazumder. J Cell Science, 2020
           Chandradoss, Chawla, Dhuppar et al. Cell Reports, 2020
+publications:
+  name: "Publications"
+  institution: "2018–present · * corresponding author"
+  years:
+    - year: "2025"
+      entries:
+        - authors: "Dhuppar S*, Poller W, Gopal M"
+          title: "miRNAs in the Biology and Hallmarks of Neurodegeneration"
+          journal: "Trends in Molecular Medicine"
+          year: "2025"
+          link: ""
 
+        - authors: "Varghese J, Cannon A, …, Dhuppar S, …, Gopal M"
+          title: "Type I interferon limits central nervous system autoimmunity by modulating the microRNA-21/FOXO1 axis in pathogenic T helper 17 cells"
+          journal: "Science Translational Medicine"
+          year: "2025"
+          link: ""
+
+    - year: "2024"
+      entries:
+        - authors: "Sen S, Dhuppar S, Mazumder A"
+          title: "Combined 3D DNA FISH, Single Molecule RNA FISH and Immunofluorescence"
+          journal: "Methods in Molecular Biology (Springer)"
+          year: "2024"
+          link: ""
+
+    - year: "2023"
+      entries:
+        - authors: "Fujiwara M, Garo L, Ajay AK, Cannon A, Kolyapetri P, Dhuppar S, Murugaiyan G"
+          title: "Protocol for analyzing transforming growth factor β signaling in dextran-sulfate-sodium-induced colitic mice using flow cytometry and western blotting"
+          journal: "STAR Protocols"
+          year: "2023"
+          link: ""
+
+    - year: "2022"
+      entries:
+        - authors: "Dhuppar S and Gopal M"
+          title: "MicroRNA effects on Gut Homeostasis: Therapeutic Implications for Inflammatory Bowel Disease"
+          journal: "Trends in Immunology"
+          year: "2022"
+          link: ""
+
+    - year: "2020"
+      entries:
+        - authors: "Dhuppar S* and Mazumder A*"
+          title: "Investigating Cell Cycle-Dependent Gene Expression in the Context of Nuclear Architecture at a Single-Allele Resolution"
+          journal: "Journal of Cell Science"
+          year: "2020"
+          link: ""
+
+        - authors: "Dhuppar S*, Roy S and Mazumder A*"
+          title: "γH2AX peak in the S phase after UV irradiation corresponds to DNA replication and does not report on the extent of DNA damage"
+          journal: "Molecular and Cellular Biology"
+          year: "2020"
+          link: ""
+
+        - authors: "Chandradoss KR, Chawla B, Dhuppar S, Nayak R, Ramachandran R, Kurukuti S, Mazumder A, Sandhu KS"
+          title: "CTCF Mediated Genome Architecture Regulates the Dosage of Mitotically Stable Monoallelic Expression of Autosomal Genes"
+          journal: "Cell Reports"
+          year: "2020"
+          link: ""
+
+    - year: "2018"
+      entries:
+        - authors: "Dhuppar S and Mazumder A"
+          title: "Measuring Cell Cycle-Dependent DNA Damage Responses and p53 Regulation on a Cell-by-Cell Basis from Image Analysis"
+          journal: "Cell Cycle"
+          year: "2018"
+          link: ""

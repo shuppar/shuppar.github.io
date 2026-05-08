@@ -12,8 +12,8 @@ Before this, I completed my PhD in Physics at the [Tata Institute of Fundamental
 
 ## Affiliations
 
+**2025 – present** &nbsp; Biology of Adversity Project (BAP), Broad Institute of MIT and Harvard  
 **2023 – present** &nbsp; Massachusetts General Brigham  
-**2023 – present** &nbsp; Biology of Adversity Project (BAP), Broad Institute of MIT and Harvard  
 **2021 – 2023** &nbsp;&nbsp;&nbsp; 4D Nucleome Project, NIH Common Funds
 
 ## Education

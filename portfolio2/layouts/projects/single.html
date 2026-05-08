@@ -65,41 +65,25 @@
       <span class="mono">{{ .name }}</span>
       <span class="era-inst">{{ .institution }}</span>
     </div>
-    <div class="era-card">
-
-      <!-- Collapsed header row -->
-      <div class="subcard-collapsed" onclick="toggleProject('publications')" style="padding: 1.1rem 1.4rem;">
-        <div class="subcard-preview">
-          <h3 style="margin:0; font-size:1.05rem;">Full Publication List</h3>
-          <p class="subcard-summary">{{ len .years }} years · click to expand</p>
-        </div>
-        <span class="subcard-chevron" id="chev-publications">↓</span>
-      </div>
-
-      <!-- Expanded panel -->
-      <div class="subcard-expanded" id="exp-publications">
-        <div style="border-top: 1px solid var(--rule);">
-          {{ range .years }}
-          <div class="pub-year-group">
-            <div class="pub-year-label">{{ .year }}</div>
-            <div class="pub-entries">
-              {{ range .entries }}
-              <div class="pub-entry">
-                <p class="pub-authors">{{ .authors }}</p>
-                <p class="pub-title">
-                  {{ if .link }}<a href="{{ .link }}" target="_blank">{{ end }}
-                  {{ .title }}
-                  {{ if .link }}</a>{{ end }}
-                </p>
-                <p class="pub-journal"><em>{{ .journal }}</em></p>
-              </div>
-              {{ end }}
-            </div>
+    <div class="era-card pub-card">
+      {{ range .years }}
+      <div class="pub-year-group">
+        <div class="pub-year-label">{{ .year }}</div>
+        <div class="pub-entries">
+          {{ range .entries }}
+          <div class="pub-entry">
+            <p class="pub-authors">{{ .authors }}</p>
+            <p class="pub-title">
+              {{ if .link }}<a href="{{ .link }}" target="_blank">{{ end }}
+              {{ .title }}
+              {{ if .link }}</a>{{ end }}
+            </p>
+            <p class="pub-journal"><em>{{ .journal }}</em></p>
           </div>
           {{ end }}
         </div>
       </div>
-
+      {{ end }}
     </div>
   </div>
   {{ end }}
@@ -153,7 +137,7 @@
     transition: max-height 0.45s ease;
     background: #fff;
   }
-  .subcard-expanded.open { max-height: 3000px; }
+  .subcard-expanded.open { max-height: 1000px; }
 
   .exp-inner {
     display: grid; grid-template-columns: 1fr 1fr;
@@ -239,7 +223,7 @@
     .subcard-preview h3 { font-size: 0.95rem; }
     .subcard-summary { font-size: 0.82rem; }
     /* Allow expanded panel to grow taller on mobile */
-    .subcard-expanded.open { max-height: 3000px; }
+    .subcard-expanded.open { max-height: 2000px; }
   }
 </style>
 
