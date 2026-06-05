@@ -7,6 +7,10 @@ title: "Activities"
 <!-- **May 2026** &nbsp; *Prenatal Stress: Mitigating Long-Term Health Risks*  
 Poller Lab @ MGH + Biology of Adversity Project @ Broad Institute -->
 
+**2026** &nbsp; *Prenatal Stress: Mitigating Long-Term Health Risks—Preclinical Studies, observations, and interventions*  
+Talk | 
+Broad Institute of MIT and Harvard, Cambridge, MA, USA
+
 **2024** &nbsp; *Quantitative Microscopy for Capturing Biological Insights*  
 Talk | 
 Broad Institute of MIT and Harvard, Cambridge, MA, USA
