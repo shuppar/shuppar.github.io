@@ -2,7 +2,7 @@
 title: "Shivnarayan Dhuppar"
 ---
 
-I am beginning my MBA at INSEAD following a research career at the intersection of **immunology**, **neuroscience**, and **quantitative biology**. 
+I am beginning my MBA at INSEAD following a research career at the intersection of **immunology**, **neuroscience**, **genomics**, and **quantitative biology**. 
 
 Most recently, I was a Senior Research Fellow at [Massachusetts General Hospital](https://www.massgeneral.org) and [Harvard Medical School](https://hms.harvard.edu). My research combined single-cell genomics and high-precision neurosurgeries in mouse models to dissect how prenatal stress programs immune function and brain development across a lifetime.
 
