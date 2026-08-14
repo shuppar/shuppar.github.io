@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
-  <meta name="description" content="{{ .Site.Params.description }}" />
+  <title>Activities · Shivnarayan Dhuppar</title>
+  <meta name="description" content="Postdoctoral researcher at MGH and the Broad Institute of MIT and Harvard" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Mono:wght@300;400&family=Spectral:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
@@ -33,7 +33,7 @@
       min-height: 100vh; display: flex; flex-direction: column;
     }
 
-    /* ── NAV ─────────────────────────────────────────── */
+     
     nav {
       position: sticky; top: 0; z-index: 100;
       background: var(--maroon);
@@ -50,7 +50,7 @@
     }
     .nav-brand span { color: var(--gold); }
 
-    /* Desktop nav links */
+     
     .nav-links {
       display: flex; gap: 2rem; list-style: none; align-items: center;
     }
@@ -69,7 +69,7 @@
     .nav-links a:hover, .nav-links a.active { color: var(--gold); }
     .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
 
-    /* Hamburger button — hidden on desktop */
+     
     .hamburger {
       display: none;
       flex-direction: column; justify-content: center; align-items: center;
@@ -85,7 +85,7 @@
     .hamburger.open span:nth-child(2) { opacity: 0; }
     .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-    /* Mobile dropdown */
+     
     .nav-dropdown {
       display: none;
       position: absolute; top: var(--nav-h); left: 0; right: 0;
@@ -106,11 +106,11 @@
       background: rgba(245,195,67,0.1); color: var(--gold);
     }
 
-    /* ── MAIN ─────────────────────────────────────────── */
+     
     main { flex: 1; }
     .page { max-width: var(--max-w); margin: 0 auto; padding: 3.5rem 2rem 5rem; }
 
-    /* ── TYPOGRAPHY ───────────────────────────────────── */
+     
     h1, h2, h3 { font-family: var(--font-serif); font-weight: 500; line-height: 1.25; color: var(--maroon-dark); }
     h1 { font-size: 2.4rem; margin-bottom: 0.3rem; }
     h2 { font-size: 1.45rem; margin: 2.8rem 0 0.8rem; }
@@ -132,14 +132,14 @@
       letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-muted);
     }
 
-    /* ── FOOTER ───────────────────────────────────────── */
+     
     footer {
       border-top: 1px solid var(--rule); padding: 1.8rem 2rem;
       text-align: center; font-family: var(--font-mono);
       font-size: 0.7rem; color: var(--ink-faint); letter-spacing: 0.07em;
     }
 
-    /* ── MOBILE ───────────────────────────────────────── */
+     
     @media (max-width: 680px) {
       nav { padding: 0 1.2rem; position: relative; }
       .nav-links { display: none; }
@@ -149,7 +149,7 @@
     }
   </style>
 </head>
-<!-- Google tag (gtag.js) -->
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-MLRYBQ476V"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -162,40 +162,100 @@
 <nav>
   <a class="nav-brand" href="/">Shivnarayan <span>Dhuppar</span></a>
 
-  <!-- Desktop links -->
+  
   <ul class="nav-links" id="nav-links">
-    {{ range .Site.Menus.main }}
-    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-    {{ end }}
+    
+    <li><a href="/">About</a></li>
+    
+    <li><a href="/projects/">Research</a></li>
+    
+    <li><a href="/activities/">Activities</a></li>
+    
+    <li><a href="/beyond/">Beyond Research</a></li>
+    
   </ul>
 
-  <!-- Hamburger button (mobile only) -->
+  
   <button class="hamburger" id="hamburger" aria-label="Toggle menu">
     <span></span><span></span><span></span>
   </button>
 </nav>
 
-<!-- Mobile dropdown -->
+
 <div class="nav-dropdown" id="nav-dropdown">
-  {{ range .Site.Menus.main }}
-  <a href="{{ .URL }}">{{ .Name }}</a>
-  {{ end }}
+  
+  <a href="/">About</a>
+  
+  <a href="/projects/">Research</a>
+  
+  <a href="/activities/">Activities</a>
+  
+  <a href="/beyond/">Beyond Research</a>
+  
 </div>
 
-<main>{{ block "main" . }}{{ end }}</main>
+<main>
+<div class="page">
+  <p class="mono" style="margin-bottom:0.5rem;">Academic Leadership</p>
+  <h1>Activities</h1>
+  <hr>
+  <div class="content">
+    <h2 id="talks--presentations">Talks &amp; Presentations</h2>
+<!-- **May 2026** &nbsp; *Prenatal Stress: Mitigating Long-Term Health Risks*  
+Poller Lab @ MGH + Biology of Adversity Project @ Broad Institute -->
+<p><strong>2026</strong>   <em>Prenatal Stress: Mitigating Long-Term Health Risks—Preclinical Studies, observations, and interventions</em><br>
+Talk |
+Broad Institute of MIT and Harvard, Cambridge, MA, USA</p>
+<p><strong>2024</strong>   <em>Quantitative Microscopy for Capturing Biological Insights</em><br>
+Talk |
+Broad Institute of MIT and Harvard, Cambridge, MA, USA</p>
+<p><strong>2019</strong>   <em>Investigating Central Dogma in the Context of Nuclear Architecture and Cell Cycle</em><br>
+Single Cell Analyses — talk and poster <br>
+Cold Spring Harbor Laboratory, NY, USA</p>
+<p><strong>2016</strong>   <em>Exploring Regulatory Roles of Genomic Organization in Gene Expression and DNA Repair</em><br>
+Optics Within Life Sciences (OWLS) — poster  <br>
+Tata Institute of Fundamental Research, Mumbai, India</p>
+<p><strong>2011</strong>   <em>Geometric Interpretations of Algebraic Operations in the Complex Plane</em><br>
+Mathematics Training and Talent Search — talk  <br>
+The Maharaja Sayajirao University of Baroda, Gujarat, India</p>
+<!-- ---
+
+## Courses & Training
+
+**2012** &nbsp; Circuits and Electronics (6.002x) — MITx  
+Part of the founding cohort with Prof. Anant Agarwal — one of the first MOOCs ever offered. -->
+<hr>
+<h2 id="science-communication">Science Communication</h2>
+<p><strong>2020</strong>   AWSAR Award for best popular science article<br>
+Department of Science and Technology, Government of India</p>
+<hr>
+<h2 id="competitions--olympiads">Competitions &amp; Olympiads</h2>
+<p><strong>2011</strong>   First in the State Math Olympiad — A R Rao Mathematical Society<br>
+<strong>2010</strong>   Award for distinctive performance — Mathematics Training and Talent Search, National Board for Higher Mathematics</p>
+<hr>
+<h2 id="peer-review">Peer Review</h2>
+<p>Active reviewer since 2018 for <em>Nature</em> · <em>PLOS</em> · <em>Frontiers</em> · <em>Taylor &amp; Francis</em></p>
+<hr>
+<h2 id="professional-memberships">Professional Memberships</h2>
+<p><strong>2023 – present</strong>   AACR · NYAS · AAAS<br>
+<strong>2024 – present</strong>   Biology of Adversity Project and the Broad Trauma Initiative</p>
+
+  </div>
+</div>
+</main>
 <footer>
-  © {{ now.Year }} Shivnarayan Dhuppar <!--&nbsp;·&nbsp; MGH &amp; Harvard Medical School-->
+  © 2026 Shivnarayan Dhuppar 
 </footer>
 
 <script>
-  // Active link
+  
   const path = window.location.pathname;
   document.querySelectorAll('.nav-links a, .nav-dropdown a').forEach(l => {
     const href = l.getAttribute('href');
     if (href === '/' ? path === '/' : path.startsWith(href)) l.classList.add('active');
   });
 
-  // Hamburger toggle
+  
   const btn = document.getElementById('hamburger');
   const dropdown = document.getElementById('nav-dropdown');
   btn.addEventListener('click', () => {
@@ -203,7 +263,7 @@
     dropdown.classList.toggle('open');
   });
 
-  // Close dropdown when a link is clicked
+  
   dropdown.querySelectorAll('a').forEach(a => {
     a.addEventListener('click', () => {
       btn.classList.remove('open');

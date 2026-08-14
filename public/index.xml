@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shivnarayan Dhuppar</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Shivnarayan Dhuppar</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Activities</title>
+      <link>http://localhost:1313/activities/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/activities/</guid>
+      <description>&lt;h2 id=&#34;talks--presentations&#34;&gt;Talks &amp;amp; Presentations&lt;/h2&gt;&#xA;&lt;!-- **May 2026** &amp;nbsp; *Prenatal Stress: Mitigating Long-Term Health Risks*  &#xA;Poller Lab @ MGH + Biology of Adversity Project @ Broad Institute --&gt;&#xA;&lt;p&gt;&lt;strong&gt;2026&lt;/strong&gt;   &lt;em&gt;Prenatal Stress: Mitigating Long-Term Health Risks—Preclinical Studies, observations, and interventions&lt;/em&gt;&lt;br&gt;&#xA;Talk |&#xA;Broad Institute of MIT and Harvard, Cambridge, MA, USA&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;2024&lt;/strong&gt;   &lt;em&gt;Quantitative Microscopy for Capturing Biological Insights&lt;/em&gt;&lt;br&gt;&#xA;Talk |&#xA;Broad Institute of MIT and Harvard, Cambridge, MA, USA&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;2019&lt;/strong&gt;   &lt;em&gt;Investigating Central Dogma in the Context of Nuclear Architecture and Cell Cycle&lt;/em&gt;&lt;br&gt;&#xA;Single Cell Analyses — talk and poster &lt;br&gt;&#xA;Cold Spring Harbor Laboratory, NY, USA&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Beyond Research</title>
+      <link>http://localhost:1313/beyond/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/beyond/</guid>
+      <description>&lt;p&gt;My work outside the lab spans pro bono strategy consulting, science communication, and competitive problem-solving.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;pro-bono-consulting&#34;&gt;Pro Bono Consulting&lt;/h2&gt;&#xA;&lt;h3 id=&#34;community-consulting-teams-of-boston-cct-boston&#34;&gt;Community Consulting Teams of Boston (CCT Boston)&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Project Leader&lt;/strong&gt; · Dec 2025 – June 2025&lt;br&gt;&#xA;Leading a 7-member team advising a sustainability nonprofit to expand earned-revenue growth streams.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Strategy Consultant&lt;/strong&gt; · Dec 2024 – Nov 2025&lt;br&gt;&#xA;Developed a strategy to increase revenue for a local music school by identifying language gaps, transportation barriers, and outdated teaching methods as root causes. Received Board endorsement and an invitation to join the Board to support implementation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>http://localhost:1313/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
