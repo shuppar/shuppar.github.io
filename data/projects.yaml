@@ -1,6 +1,6 @@
 eras:
   - name: "Postdoctoral Work"
-    institution: "MGB & Harvard Medical School · 2023–present"
+    institution: "MGB & Harvard Medical School · 2023–2026"
     projects:
       - id: "prenatal"
         title: "Biological underpinnings of the Matthew effect"
@@ -132,7 +132,7 @@ eras:
           Chandradoss, Chawla, Dhuppar et al. Cell Reports, 2020
 publications:
   name: "Publications"
-  institution: "2018–present · * corresponding author"
+  institution: "2018–2027 · * corresponding author"
   years:
     - year: "2025"
       entries:

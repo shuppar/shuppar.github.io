@@ -8,7 +8,7 @@ Previously, I was a Senior Research Fellow at [Massachusetts General Hospital](h
 
 Before this, I completed my PhD in Physics at the [Tata Institute of Fundamental Research (TIFR)](https://www.tifr.res.in), India, where I built fully automated image analysis pipelines to study cell cycle-dependent DNA damage responses and genome architecture from high-resolution fluorescence microscopy images.
 
-Across these experiences, I’ve been drawn to problems at the intersection of biology, computation, and quantitative science and increasingly to the broader questions of how scientific discoveries can be translated into impact.
+Across these experiences, I've been drawn to problems at the intersection of biology, computation, and quantitative science and increasingly to the broader questions of how scientific discoveries can be translated into impact.
 
 
 ---
